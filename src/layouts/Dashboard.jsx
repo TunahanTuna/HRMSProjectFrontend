@@ -3,6 +3,8 @@ import Sidebar from './Sidebar'
 import { Grid } from 'semantic-ui-react'
 import { Route } from 'react-router-dom'
 import JobPositionList from '../pages/JobPositionList'
+import EmployerList from '../pages/EmployerList'
+import CandidateList from '../pages/CandidateList'
 
 export default function Dashboard() {
     return (
@@ -15,7 +17,8 @@ export default function Dashboard() {
                     <Grid.Column width={12}>
                         <Route exact path="/" component={JobPositionList}/>
                         <Route exact path="/jobPositions" component={JobPositionList}/>
-                        <Route exact path="/employers" component={JobPositionList}/>
+                        <Route exact path="/employers" component={EmployerList}/>
+                        <Route exact path="/candidates" component={CandidateList}/>
                     </Grid.Column>
                 </Grid.Row>
             </Grid>

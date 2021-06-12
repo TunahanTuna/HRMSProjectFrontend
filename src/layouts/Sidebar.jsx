@@ -9,10 +9,10 @@ export default function Sidebar() {
                 <Menu.Item icon="briefcase" as={ NavLink } to="/jobPositions"
                     name='Job Positions'
                 />
-                <Menu.Item icon="building"
+                <Menu.Item icon="building" as={ NavLink } to="/employers"
                     name='Employer'
                 />
-                <Menu.Item icon = "user"
+                <Menu.Item icon = "user" as={ NavLink } to="/candidates"
                     name='Candidate'
                 />
             </Menu>

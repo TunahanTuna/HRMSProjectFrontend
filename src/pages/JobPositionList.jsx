@@ -24,7 +24,7 @@ export default function JobPositionList() {
 
                 <Table.Body>
                     {jobPositions.map((jobPostion) => (
-                        <Table.Row>
+                        <Table.Row key={jobPostion.id}>
                             <Table.Cell>{jobPostion.id}</Table.Cell>
                             <Table.Cell>{jobPostion.positionName}</Table.Cell>
                         </Table.Row>
