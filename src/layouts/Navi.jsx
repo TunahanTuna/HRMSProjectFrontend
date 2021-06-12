@@ -2,14 +2,14 @@ import React, { useState } from 'react'
 import { Menu, Container } from 'semantic-ui-react'
 import SignedOut from './SignedOut'
 import SignedIn from './SignedIn';
-import { useHistory } from 'react-router-dom';
+import { NavLink, useHistory } from 'react-router-dom';
 export default function Navi() {
     const [isAuthanticated, setIsAuthanticated] = useState(false);
     const history = useHistory();
 
     function handleSignOut() {
         setIsAuthanticated(false);
-        // history.push("/")
+        history.push("/")
     }
     function handleSignIn() {
         setIsAuthanticated(true)
@@ -19,7 +19,7 @@ export default function Navi() {
             <Menu size='large'>
                 <Container>
                     <Menu.Item
-                        name='home'
+                        name='home'  as={ NavLink } to="/"
                     />
                     <Menu.Item
                         name='messages'

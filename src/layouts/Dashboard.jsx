@@ -2,6 +2,7 @@ import React from 'react'
 import Sidebar from './Sidebar'
 import { Grid } from 'semantic-ui-react'
 import { Route } from 'react-router-dom'
+import JobPositionList from '../pages/JobPositionList'
 
 export default function Dashboard() {
     return (
@@ -12,7 +13,9 @@ export default function Dashboard() {
                         <Sidebar />
                     </Grid.Column>
                     <Grid.Column width={12}>
-                        {/* <Route exact path="/" /> */}
+                        <Route exact path="/" component={JobPositionList}/>
+                        <Route exact path="/jobPositions" component={JobPositionList}/>
+                        <Route exact path="/employers" component={JobPositionList}/>
                     </Grid.Column>
                 </Grid.Row>
             </Grid>
