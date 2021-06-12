@@ -12,8 +12,8 @@ export default function Sidebar() {
                 <Menu.Item icon="building" as={ NavLink } to="/employers"
                     name='Employer'
                 />
-                <Menu.Item icon = "user" as={ NavLink } to="/candidates"
-                    name='Candidate'
+                <Menu.Item icon = "users" as={ NavLink } to="/candidates"
+                    name='Candidate' 
                 />
             </Menu>
         </div>
