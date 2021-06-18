@@ -6,6 +6,7 @@ import JobPositionList from '../pages/JobPositionList'
 import EmployerList from '../pages/EmployerList'
 import CandidateList from '../pages/CandidateList'
 import EmployeeList from '../pages/EmployeeList'
+import AdvertFormList from '../pages/AdvertFormList'
 export default function Dashboard() {
     return (
         <div>
@@ -20,6 +21,7 @@ export default function Dashboard() {
                         <Route exact path="/employers" component={EmployerList} />
                         <Route exact path="/candidates" component={CandidateList} />
                         <Route exact path="/employees" component={EmployeeList} />
+                        <Route exact path="/advertForms" component={AdvertFormList} />
                     </Grid.Column>
                 </Grid.Row>
             </Grid>
