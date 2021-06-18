@@ -5,7 +5,7 @@ import { Route } from 'react-router-dom'
 import JobPositionList from '../pages/JobPositionList'
 import EmployerList from '../pages/EmployerList'
 import CandidateList from '../pages/CandidateList'
-
+import EmployeeList from '../pages/EmployeeList'
 export default function Dashboard() {
     return (
         <div>
@@ -15,10 +15,11 @@ export default function Dashboard() {
                         <Sidebar />
                     </Grid.Column>
                     <Grid.Column width={12}>
-                        <Route exact path="/" component={JobPositionList}/>
-                        <Route exact path="/jobPositions" component={JobPositionList}/>
-                        <Route exact path="/employers" component={EmployerList}/>
-                        <Route exact path="/candidates" component={CandidateList}/>
+                        <Route exact path="/" component={JobPositionList} />
+                        <Route exact path="/jobPositions" component={JobPositionList} />
+                        <Route exact path="/employers" component={EmployerList} />
+                        <Route exact path="/candidates" component={CandidateList} />
+                        <Route exact path="/employees" component={EmployeeList} />
                     </Grid.Column>
                 </Grid.Row>
             </Grid>

@@ -10,10 +10,13 @@ export default function Sidebar() {
                     name='Job Positions'
                 />
                 <Menu.Item icon="building" as={ NavLink } to="/employers"
-                    name='Employer'
+                    name='Employers'
                 />
-                <Menu.Item icon = "users" as={ NavLink } to="/candidates"
-                    name='Candidate' 
+                <Menu.Item icon = "user" as={ NavLink } to="/candidates"
+                    name='Candidates' 
+                />
+                <Menu.Item icon = "users" as={ NavLink } to="/employees"
+                    name='Employees' 
                 />
             </Menu>
         </div>
