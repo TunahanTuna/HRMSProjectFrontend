@@ -7,6 +7,7 @@ import EmployerList from '../pages/EmployerList'
 import CandidateList from '../pages/CandidateList'
 import EmployeeList from '../pages/EmployeeList'
 import AdvertFormList from '../pages/AdvertFormList'
+import Cv from '../pages/Cv'
 export default function Dashboard() {
     return (
         <div>
@@ -22,6 +23,7 @@ export default function Dashboard() {
                         <Route exact path="/candidates" component={CandidateList} />
                         <Route exact path="/employees" component={EmployeeList} />
                         <Route exact path="/advertForms" component={AdvertFormList} />
+                        <Route exact path="/candidates/:id" component={Cv}/>
                     </Grid.Column>
                 </Grid.Row>
             </Grid>
