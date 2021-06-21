@@ -9,6 +9,7 @@ import EmployeeList from '../pages/EmployeeList'
 import AdvertFormList from '../pages/AdvertFormList'
 import Cv from '../pages/Cv'
 import Register from '../pages/Register'
+import AddAdvertForm from '../pages/AddAdvertForm'
 export default function Dashboard() {
     return (
         <div>
@@ -27,6 +28,7 @@ export default function Dashboard() {
                         <Route exact path="/candidates/:id" component={Cv}/>
 
                         <Route exact path="/register" component={Register}/>
+                        <Route exact path="/addAdvertForm" component={AddAdvertForm}/>
                     </Grid.Column>
                 </Grid.Row>
             </Grid>

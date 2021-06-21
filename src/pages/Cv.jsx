@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import CandidateService from "../services/candidateService";
-import { Card, Image, Table, Header, Button, Icon } from "semantic-ui-react";
+import { Card, Image, Table, Header } from "semantic-ui-react";
 
 export default function CvDetail() {
     let { id } = useParams();
